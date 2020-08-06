@@ -1,0 +1,26 @@
+{
+  "name": "test-remax",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Remax Project With TypeScript",
+  "main": "index.js",
+  "keywords": [],
+  "author": "david <1982043795@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -t wechat -w",
+    "build": "cross-env NODE_ENV=production remax build -t wechat"
+  },
+  "dependencies": {
+    "@remax/plugin-sass": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.12.0",
+    "remax": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.16",
+    "cross-env": "^7.0.2",
+    "prettier": "^2.0.5",
+    "typescript": "^3.7.3"
+  }
+}

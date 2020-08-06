@@ -1,0 +1,65 @@
+@import '~@/styles/vari';
+$side_nav_height: 64px;
+$side_inner_unit: 30px;
+.page-header {
+  color: $color_info;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  .page-header_status {
+  }
+  .page-header_content {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    box-sizing: border-box;
+    .page-header_nav {
+      height: $side_nav_height;
+      border-radius: 32px;
+      position: absolute;
+      left: 40px;
+      top: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: 0 26px;
+      box-sizing: border-box;
+      ._back-icon {
+        width: $side_inner_unit;
+        height: $side_inner_unit;
+        margin-right: 26px;
+      }
+      ._home-icon {
+        width: $side_inner_unit;
+        height: $side_inner_unit;
+        margin-left: 26px;
+      }
+      ._split-line {
+        height: $side_inner_unit + 10px;
+        width: 1px;
+        background: rgba($color: #000000, $alpha: 0.1);
+        position: abolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+      }
+    }
+    .page-header_head {
+      position: absolute;
+      width: 64px;
+      height: $side_nav_height;
+      border-radius: 50%;
+      left: 20px;
+      ._head-icon {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
